@@ -4,6 +4,7 @@ I've patched this fork of the Ecoflow integration to resolve all outstanding war
 
 - The `await` patch - which was a blocking bug.
 - The deprecation warnings about constants such as UnitOfEnergy that showed up around HA 2024.4.0.
+- Fix the entity category for `...ac_custom_charge_speed` by changing from config (which caused the error) to diagnostic.
 - Minor visual fix affecting how the AC frequency select displays entries (showed as `50Hz Hz`, now `50Hz`)
 
 *Obviously* this integration was originally written by @vwt12eh8 but it seems that he/she has abandoned the repo as it has had no updates or PRs accepted in 2 years. I have changed some bits of the code that point to his repo (such as the manifest.json) but I don't see this being a major issue given the MIT license.
