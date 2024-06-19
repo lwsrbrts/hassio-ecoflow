@@ -21,8 +21,8 @@ _AC_OPTIONS = {
 }
 
 _FREQS = {
-    "50Hz": 1,
-    "60Hz": 2,
+    "50": 1,
+    "60": 2,
 }
 
 _DC_IMPUTS = {
