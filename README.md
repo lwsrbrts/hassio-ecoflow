@@ -1,6 +1,16 @@
-# EcoFlow Portable Power Station Integration for Home Assistant
+# @lwsrbrts version - fixing 🐜🐜🐜
 
-**NB: Includes the await patch**
+I've patched this fork of the Ecoflow integration to resolve all outstanding warnings raised by the integration in Home Assistant up to HA version 2024.6.3.
+
+- The `await` patch - which was a blocking bug.
+- The deprecation warnings about constants such as UnitOfEnergy that showed up around HA 2024.4.0.
+- Minor visual fix affecting how the AC frequency select displays entries (showed as `50Hz Hz`, now `50Hz`)
+
+*Obviously* this integration was originally written by @vwt12eh8 but it seems that he/she has abandoned the repo as it has had no updates or PRs accepted in 2 years. I have changed some bits of the code that point to his repo (such as the manifest.json) but I don't see this being a major issue given the MIT license.
+
+What follows is from the original repo...
+
+# EcoFlow Portable Power Station Integration for Home Assistant
 
 This integration uses a local API.
 Therefore, if the devices are not on the same network, they cannot synchronize their status.
