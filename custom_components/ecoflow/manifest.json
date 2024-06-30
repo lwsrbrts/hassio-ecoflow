@@ -1,7 +1,7 @@
 {
   "domain": "ecoflow",
   "name": "Ecoflow",
-  "version": "2.2.1",
+  "version": "2.2.4",
   "documentation": "https://github.com/lwsrbrts/hassio-ecoflow",
   "issue_tracker": "https://github.com/lwsrbrts/hassio-ecoflow/issues",
   "requirements": [
