@@ -1,12 +1,13 @@
 # @lwsrbrts version - fixing 🐜🐜🐜
 
-I've patched this fork of the Ecoflow integration to resolve all outstanding warnings raised by the integration in Home Assistant up to HA version 2024.6.3.
+I've patched this fork of the Ecoflow integration to resolve all outstanding warnings raised by the integration in Home Assistant up to HA version 2025.4.0.
 
 - The `await` patch - which was a blocking bug.
 - The deprecation warnings about constants such as UnitOfEnergy that showed up around HA 2024.4.0.
 - Fix the entity category for `...ac_custom_charge_speed` by changing from config (which caused the error) to diagnostic.
 - Minor visual fix affecting how the AC frequency select displays entries (showed as `50Hz Hz`, now `50Hz`)
 - 30/06/2024 - FIX: Detected that custom integration 'ecoflow' calls async_write_ha_state from a thread other than the event loop, which may cause Home Assistant to crash or data to corrupt.
+- 04/04/2025 - FIX: DhcpServiceInfo was used from ecoflow, this is a deprecated constant which will be removed in HA Core 2026.2. Use homeassistant.helpers.service_info.dhcp.DhcpServiceInfo instead, please report it to the author of the 'ecoflow' custom integration
 
 *Obviously* this integration was originally written by @vwt12eh8 but it seems that he/she has abandoned the repo as it has had no updates or PRs accepted in 2 years. I have changed some bits of the code that point to his repo (such as the manifest.json) but I don't see this being a major issue given the MIT license.
 
